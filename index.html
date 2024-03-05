@@ -4,6 +4,7 @@
     <title>Product overview Webinar | Freshmarketer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style1.css">
+    <script src='./js/submit.js'></script>
     <script src='//in.fw-cdn.com/31747194/895014.js' chat='true'></script>
 </head>
 
@@ -30,7 +31,7 @@
                 </svg>
                 <h2>Form submitted successfully</h2>
             </div>
-            <form class="fw-webniar-form" id="webinar-form" onsubmit="event.preventDefault();" method="post">
+            <form class="fw-webniar-form" id="webinar-form" onsubmit="event.preventDefault(); submitForm()" method="post">
                 <h4 class="fw-mb30 fw-h4">Web Form</h4>
                 <div class="fw-form-group">
                     <label>First Name</label>
