@@ -1,0 +1,183 @@
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        color: #12344d;
+    }
+
+    .fw-section {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(238, 90, 36, .1);
+    }
+
+    .fw-col {
+        flex: 1 0;
+        padding: 40px;
+    }
+
+    .fw-webniar-form {
+        max-width: 40%;
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 2px;
+        box-shadow: 0 0 40px #e4e4e4;
+        margin: auto;
+        transition: ease-in 0.4s
+    }
+
+    .--center-align {
+        align-self: center;
+    }
+
+    .fw-input {
+        width: 100%;
+        border-radius: 2px;
+        border: 1px solid #e8e8e8;
+        min-height: 32px;
+        padding: 10px;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .fw-form-group {
+        margin-top: 18px;
+    }
+
+    .fw-form-group .fw-input {
+        margin-top: 5px;
+    }
+
+    .fw-mb30 {
+        margin-bottom: 30px;
+    }
+
+    .fw-mt50 {
+        margin-top: 120px;
+    }
+
+    .fw-pri-btn {
+        min-width: 140px;
+        display: inline-block;
+        padding: 10px;
+        background-color: #ee5a24;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 25px;
+        border-radius: 3px;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        cursor: pointer
+    }
+
+
+    h2 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    p {
+        letter-spacing: 0.5px;
+        line-height: 22px;
+        color: #666;
+    }
+
+    .fw-h4 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .--link-text {
+        color: #0075bb;
+        font-weight: 500;
+    }
+
+    .fw-list-points {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .fw-list-points li {
+        margin-top: 12px;
+        line-height: 22px;
+        color: #666
+    }
+
+    ::placeholder {
+        color: #b1b3b2;
+        opacity: 0.6;
+    }
+
+    :-ms-input-placeholder {
+        color: #b1b3b2;
+        opacity: 0.6;
+    }
+
+    ::-ms-input-placeholder {
+        color: #b1b3b2;
+        opacity: 0.6;
+    }
+
+    .fw-ml20 {
+        margin-left: 20px
+    }
+
+    .fw-mb50 {
+        margin-bottom: 80px;
+    }
+
+    .require-symbol {
+        font-size: 12px;
+        margin-left: 4px;
+        color: red;
+    }
+
+    .form-success {
+        text-align: center;
+        display: none;
+        transition: ease-in 0.4s
+    }
+
+    .toogle-success .form-success {
+        display: block;
+        transition: ease-in 0.4s
+    }
+
+    .toogle-success .fw-webniar-form {
+        display: none;
+        transition: ease-in 0.4s
+    }
+
+    select {
+        height: 43px;
+        background-color: #fff;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    @media screen and (max-width: 992px) {
+        .fw-cn-max-align {
+            max-width: 100%;
+        }
+
+        .fw-section {
+            flex-direction: column;
+            background-color: inherit;
+        }
+
+        .fw-webniar-form {
+            max-width: 100%;
+        }
+
+        .--center-align {
+            align-self: inherit;
+            background-color: rgba(238, 90, 36, .1);
+        }
+    }

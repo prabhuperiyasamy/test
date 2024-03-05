@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Product overview Webinar | Freshmarketer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style1.css">
+
+    <!-- Google captcha Refer: https://www.google.com/recaptcha/admin/site/497050251-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    
+    <!-- CRM tracking code -->
+    <!-- <script src='./js/unified.js'></script> -->
+
+    <!-- old FSA smartforms code -->
+    <script src='./js/smartform.js'></script>
+
+    <!-- Start of HubSpot Embed Code
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/23120786.js"></script>
+    End of HubSpot Embed Code -->
+</head>
+
+<body>
+    <section class="fw-section">
+        <div class="fw-col --form-col --center-align" id="form-section">
+            <div class="form-success">
+                <?xml version="1.0" ?>
+                <svg class="fw-mb30" height="117px" version="1.1" viewBox="0 0 117 117" width="80px"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title />
+                    <desc />
+                    <defs />
+                    <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                        <g fill-rule="nonzero" id="correct">
+                            <path
+                                d="M34.5,55.1 C32.9,53.5 30.3,53.5 28.7,55.1 C27.1,56.7 27.1,59.3 28.7,60.9 L47.6,79.8 C48.4,80.6 49.4,81 50.5,81 C50.6,81 50.6,81 50.7,81 C51.8,80.9 52.9,80.4 53.7,79.5 L101,22.8 C102.4,21.1 102.2,18.5 100.5,17 C98.8,15.6 96.2,15.8 94.7,17.5 L50.2,70.8 L34.5,55.1 Z"
+                                fill="#17AB13" id="Shape" />
+                            <path
+                                d="M89.1,9.3 C66.1,-5.1 36.6,-1.7 17.4,17.5 C-5.2,40.1 -5.2,77 17.4,99.6 C28.7,110.9 43.6,116.6 58.4,116.6 C73.2,116.6 88.1,110.9 99.4,99.6 C118.7,80.3 122,50.7 107.5,27.7 C106.3,25.8 103.8,25.2 101.9,26.4 C100,27.6 99.4,30.1 100.6,32 C113.1,51.8 110.2,77.2 93.6,93.8 C74.2,113.2 42.5,113.2 23.1,93.8 C3.7,74.4 3.7,42.7 23.1,23.3 C39.7,6.8 65,3.9 84.8,16.2 C86.7,17.4 89.2,16.8 90.4,14.9 C91.6,13 91,10.5 89.1,9.3 Z"
+                                fill="#17AB13" id="Shape" />
+                        </g>
+                    </g>
+                </svg>
+                <h2>Form submitted successfully</h2>
+            </div>
+            <form class="fw-webniar-form" id="webinar-form" onsubmit="event.preventDefault();" method="post">
+                <h4 class="fw-mb30 fw-h4">Web Form</h4>
+                <div class="fw-form-group">
+                    <label>First Name</label>
+                    <input type="text" class="fw-input user_inp" placeholder="First Name" name="First Name" />
+                </div>
+                <div class="fw-form-group">
+                    <label>Last Name</label>
+                    <input type="hidden" class="fw-input user_inp" placeholder="Last Name" name="Last Name" value="kumar"/>
+                </div>
+                <div class="fw-form-group">
+                    <label>Email<span class="require-symbol">*</span></label>
+                    <input type="email" class="fw-input user_inp" placeholder="Email" required name="Email" />
+                </div>
+                <div class="fw-form-group">
+                    <input type="text" class="fw-input user_inp"/>
+                </div>
+                <!-- Hidden fields -->
+                <input type="hidden" id="target_email" name="target_email" value="hidden@gmail.com">
+                <input type="hidden" name="city" value="default city"/>
+                <div class="g-recaptcha" data-sitekey="6LdpkoMpAAAAAPIgBfbFd_ju4X9Qhnfg3qJ5zvwm"></div><br/>
+                <input class="fw-pri-btn" type="submit" id="sub-btn-edm" value="Submit">
+            </form>
+        </div>
+    </section>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("webinar-form").submit();
+        }
+      </script>
+</body>
+
+</html>
