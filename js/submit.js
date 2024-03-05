@@ -1,14 +1,14 @@
-// function submitForm() {
-//     var aa = document.getElementById("form-section"),
-//         form = document.getElementById("webinar-form")
+function submitForm() {
+    var aa = document.getElementById("form-section"),
+        form = document.getElementById("webinar-form")
 
-//     aa.classList.toggle("toogle-success")
+    aa.classList.toggle("toogle-success")
 
-//     setTimeout(() => {
-//         aa.classList.toggle("toogle-success");
-//         form.reset();
-//     }, 3000);
-// }
+    setTimeout(() => {
+        aa.classList.toggle("toogle-success");
+        form.reset();
+    }, 3000);
+}
 
 // document.addEventListener("click", function (e) {
 //     e.stopPropagation();
